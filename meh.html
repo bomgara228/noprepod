@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            width: 100%;
+            background-color: darkolivegreen;
+            margin: 0;
+            display: grid;
+
+            grid-template-rows: 20% 80%;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            grid-template-areas: 
+            "header header header"
+            "first second third" ;
+
+            grid-gap: 10px;
+        }
+        h2 {
+            color: white;
+        }
+        .first {
+            border-radius: 5px;
+            background-color: gray;
+            grid-area:first;
+            display: flex;
+            flex-direction: column;
+    
+        }
+        .second {
+            border-radius: 5px;
+            background-color: gray;
+            grid-area:second;
+            display: flex;
+            flex-direction: column;
+        }
+        .third {
+            border-radius: 5px;
+            background-color: gray;
+            grid-area:third;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            grid-area: header;
+        }
+        .inclass {
+            background-color: white;
+            align-self: center;
+            width: 80%;
+            margin: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header"><h2>MY SQARDS</h2></div>
+
+    <div class="first">
+        <p><strong>Test</strong></p>
+        <div class="inclass">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="inclass">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="inclass">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+    <div class="second">
+        <p><strong>Test</strong></p>
+        <div class="inclass">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="inclass">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+    <div class="third">
+        <p><strong>Test</strong></p>
+        <div class="inclass">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="inclass">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="inclass">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+</body>
+</html>
